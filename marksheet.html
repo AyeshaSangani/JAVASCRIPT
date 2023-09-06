@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+h1{
+    color: rgb(72, 235, 235);
+    text-align: center;
+    font-size: x-large;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2{
+    color: red;
+    text-align: center;
+    font-weight: bolder;
+}
+h3{
+    color: blue;
+    font-size: large;
+}
+    </style>
+</head>
+<body>
+    
+<script>
+  //sign up
+var name = prompt("Enter Your Name");
+var email = prompt("Enter Your Email");
+var pass = prompt("Enter Your Password");
+var cpass = prompt("Enter Your Confirm Password");
+
+//log in
+if (pass == cpass) {
+    
+    var emaillog = prompt("Enter Your Email");
+    var passlog =prompt("Enter Your Password");
+
+    if((email ==emaillog) && (pass ==passlog)) {
+
+
+document.write("<h1>Welcome</h1> <br> <br>")
+
+//marks
+
+let math = parseFloat(prompt("Enter Your Maths Marks"));
+let urdu = parseFloat(prompt("Enter Your Urdu Marks"));
+let comp = parseFloat(prompt("Enter Your Computer Marks"));
+let phy = parseFloat(prompt("Enter Your Physics Marks"));
+let chem = parseFloat(prompt("Enter Your Chemistry Marks"));
+let stat = parseFloat(prompt("Enter Your Statistics Marks"));
+let eco = parseFloat(prompt("Enter Your Economics Marks"));
+
+let obtainedmarks = math + urdu + comp + phy + chem + stat + eco;
+
+let perc = (obtainedmarks / 1200) * 100
+
+ 
+document.write("obtainedmarks " + obtainedmarks + "<br><br>")
+
+document.write("percentage"   +   perc.toFixed(2) + "%" + "<br><br>")
+
+
+if (perc <=100 && perc >=90)  {
+    
+    document.write("<h3>Grade Is A++</h3>")
+
+} else if (perc < 90 && perc >= 80)  {
+    
+    document.write("<h3>Grade Is A+</h3>")
+
+} else if (perc < 80 && perc >= 70)  {
+    
+    document.write("<h3>Grade Is A</h3>")
+
+} else if (perc < 70 && perc >= 60)  {
+    
+    document.write("<h3>Grade Is B</h3>")
+
+} else if (perc < 60 && perc >= 50)  {
+    
+    document.write("<h3>Grade Is C</h3>")
+
+} else if (perc >= 45)  {
+    
+    document.write("<h3>Just Pass</h3>")
+
+} else  {
+    
+    document.write("<h2>Fail</h2>")
+  
+   }
+
+}
+
+else   {
+
+document.write("invalid email or password")
+}
+
+
+} else{
+    document.write("password doesn't match")
+ }
+
+
+
+
+
+       </script>
+
+
+    </body>
+
+</html>
