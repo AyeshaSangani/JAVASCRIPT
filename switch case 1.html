@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional statements</title>
+</head>
+<body>
+    
+    <script>
+        
+var oneweek = prompt("Enter your day")
+
+
+
+switch (oneweek) {
+      case 'FRIDAY': case 'FRI' : case 'F':
+        {
+            document.write("Today is Friday" + oneweek)
+            break;
+        }
+
+        case 'SATURDAY': case 'SAT' : case 'S':
+            {
+                document.write("Weekend started...!" + oneweek)
+                break;
+            }
+
+            case 'SUNDAY': case 'SUN' : case 'S':
+                {
+                    document.write("...Sleeping day..." + oneweek)
+                    break;
+                }
+
+                case 'MONDAY': case 'MON' : case 'M':
+                    {
+                        document.write("Its a start of working day..." + oneweek)
+                        break;
+                    }
+
+                    case 'TUESDAY': case 'TUES' : case 'T':
+                        {
+                            document.write("Yet another working day..."+ oneweek )
+                            break;
+                        }
+
+                        case 'WEDNESDAY': case 'WED' : case 'W':
+                            {
+                                document.write("Today is wednesday" + oneweek)
+                                break;
+                            }
+
+                            case 'THURSDAY': case 'THURS' : case 'TH':
+                                {
+                                    document.write("One more day to go,today is Thursday" + oneweek)
+                                    break;
+                                }
+
+              default:
+                {
+                    document.write("!!!.INVALID DAY.!!!"+ oneweek )
+                }                  
+}
+
+
+   
+
+    </script>
+</body>
+</html>
